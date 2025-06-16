@@ -1,5 +1,43 @@
+/* 引入字体文件 */
+@font-face {
+  font-family: "Merienda";
+  font-weight: 300;
+  src: url("../font/Merienda/Merienda-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merienda";
+  font-weight: 400;
+  src: url("../font/Merienda/Merienda-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merienda";
+  font-weight: 500;
+  src: url("../font/Merienda/Merienda-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merienda";
+  font-weight: 600;
+  src: url("../font/Merienda/Merienda-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merienda";
+  font-weight: 700;
+  src: url("../font/Merienda/Merienda-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merienda";
+  font-weight: 800;
+  src: url("../font/Merienda/Merienda-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merienda";
+  font-weight: 900;
+  src: url("../font/Merienda/Merienda-Black.ttf") format("truetype");
+}
+
 body {
   margin: 0;
+  font-family: "Merienda", sans-serif;
 }
 
 p {
