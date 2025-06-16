@@ -1,43 +1,45 @@
 /* 引入字体文件 */
 @font-face {
-  font-family: "Merienda";
-  font-weight: 300;
-  src: url("../font/Merienda/Merienda-Light.ttf") format("truetype");
+  font-family: "MeriendaBlack";
+  src: url("../font/Merienda_woff2/Merienda-Black.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Merienda";
-  font-weight: 400;
-  src: url("../font/Merienda/Merienda-Regular.ttf") format("truetype");
+  font-family: "MeriendaBold";
+  src: url("../font/Merienda_woff2/Merienda-Bold.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Merienda";
-  font-weight: 500;
-  src: url("../font/Merienda/Merienda-Medium.ttf") format("truetype");
+  font-family: "MeriendaExtraBold";
+  src: url("../font/Merienda_woff2/Merienda-ExtraBold.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Merienda";
-  font-weight: 600;
-  src: url("../font/Merienda/Merienda-SemiBold.ttf") format("truetype");
+  font-family: "MeriendaLight";
+  src: url("../font/Merienda_woff2/Merienda-Light.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Merienda";
-  font-weight: 700;
-  src: url("../font/Merienda/Merienda-Bold.ttf") format("truetype");
+  font-family: "MeriendaMedium";
+  src: url("../font/Merienda_woff2/Merienda-Medium.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Merienda";
-  font-weight: 800;
-  src: url("../font/Merienda/Merienda-ExtraBold.ttf") format("truetype");
+  font-family: "MeriendaRegular";
+  src: url("../font/Merienda_woff2/Merienda-Regular.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Merienda";
-  font-weight: 900;
-  src: url("../font/Merienda/Merienda-Black.ttf") format("truetype");
+  font-family: "MeriendaSemiBold";
+  src: url("../font/Merienda_woff2/Merienda-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "MeriendaVariable";
+  src: url("../font/Merienda_woff2/Merienda-VariableFont_wght.woff2")
+    format("woff2");
 }
 
 body {
   margin: 0;
-  font-family: "Merienda", sans-serif;
+  font-family: "MeriendaRegular", "MeriendaMedium", "MeriendaSemiBold",
+    "MeriendaBold", "MeriendaExtraBold", "MeriendaBlack", "MeriendaLight",
+    "MeriendaVariable", sans-serif;
+  /* 强制等待字体加载 */
+  font-display: block;
 }
 
 p {
