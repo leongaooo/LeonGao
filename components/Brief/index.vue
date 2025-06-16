@@ -72,7 +72,7 @@
             Web:
             <BriefAlink href="https://vuejs.org/">
                 <template #icon>
-                    <img src="/assets/icon/Vue.svg" alt="Vue">
+                    <img src="/assets/icon/vue.svg" alt="Vue">
                 </template>
                 Vue
             </BriefAlink>
