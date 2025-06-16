@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+}
+
+p {
+  margin: 8px 0;
+  letter-spacing: 1px;
+  line-height: 36px;
+}
