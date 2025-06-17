@@ -39,7 +39,7 @@ body {
     "MeriendaBold", "MeriendaExtraBold", "MeriendaBlack", "MeriendaLight",
     "MeriendaVariable", sans-serif;
   /* 强制等待字体加载 */
-  font-display: block;
+  /* font-display: block; */
 }
 
 p {
