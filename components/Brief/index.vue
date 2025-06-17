@@ -27,17 +27,17 @@
             </template>
             Mintopia_
         </BriefAlink>
-        <BriefAlink href="https://x.com/Min_topia">
+        <BriefAlink href="https://x.com/Leongaooo">
             <template #icon>
                 <img src="/assets/icon/Twitter.ico" alt="Twitter">
             </template>
-            Twitter
+            Leongaooo
         </BriefAlink>
         <BriefAlink href="https://github.com/leongaooo">
             <template #icon>
                 <img style=" filter: drop-shadow(2px 4px 6px black);" src="/assets/icon/github.svg" alt="GitHub">
             </template>
-            GitHub
+            leongaooo
         </BriefAlink>
         <BriefAlink href="https://juejin.cn/user/3976252950591149/columns">
             <template #icon>
