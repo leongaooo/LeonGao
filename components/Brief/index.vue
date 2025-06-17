@@ -5,9 +5,8 @@
 
 <template>
     <article class="max-w-[800px] w-full m-auto p-3 relative" >
-        <h1>Leon Gao
-            <img class="absolute w-88px h-88px top-0px left-106px z--1" src="https://cdn.pixabay.com/animation/2025/02/13/00/43/00-43-37-456_512.gif" alt="设置背景图"/>
-        </h1>
+        <h1>Leon Gao</h1>
+        <img class="absolute w-500px h-500px top-0px left-55px z--5 opacity-20" src="https://cdn.pixabay.com/animation/2024/02/22/07/04/07-04-49-688_512.gif" alt="设置背景图"/>
         <p>
             Hello! I'm Leon Gao, my Chinese name is 高立民.
             <span>你好！我叫Leon Gao, 中文名叫高立民。</span>
@@ -195,10 +194,12 @@
 
 <style scoped lang='scss'>
 p {
+    mix-blend-mode: difference;
     span {
         display: block;
         color: #999999;
         font-size: 14px;
+        mix-blend-mode: difference;
     }
 }
 </style>
