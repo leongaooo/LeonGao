@@ -19,7 +19,5 @@ useHead({
 </script>
 
 <template>
-  <div>
-    <Brief />
-  </div>
+  <NuxtPage />
 </template>

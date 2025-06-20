@@ -4,20 +4,27 @@
 </script>
 
 <template>
-    <article class="max-w-[800px] w-full m-auto p-3 relative" >
+    <article class="max-w-[800px] w-full m-auto p-3 relative">
         <h1>Leon Gao</h1>
-        <img class="absolute w-500px h-500px top-0px left-55px z--5 opacity-20" src="https://cdn.pixabay.com/animation/2024/02/22/07/04/07-04-49-688_512.gif" alt="设置背景图"/>
+        <img class="absolute w-500px h-500px top-0px left-55px z--5 opacity-20"
+            src="https://cdn.pixabay.com/animation/2024/02/22/07/04/07-04-49-688_512.gif" alt="设置背景图" />
         <p>
             Hello! I'm Leon Gao, my Chinese name is 高立民.
             <span>你好！我叫Leon Gao, 中文名叫高立民。</span>
         </p>
         <p>
-            Currently, I am focusing on the Web3D field, while also interested in GIS geographic development. In my spare time, I make efforts to learn English and study full-stack development.
+            Currently, I am focusing on the Web3D field, while also interested in GIS geographic development. In my
+            spare time, I make efforts to learn English and study full-stack development.
             <span>目前我侧重于Web3D领域，同时对GIS地理开发感兴趣，业余时间会努力学英语，和全栈开发的学习。</span>
         </p>
         <p>
-            Since I got into Web development in 2021, I haven't changed my career path or inner passion. This is driven by the thriving front-end community and the continuous evolution of HTTP. We've witnessed an expanding range of possibilities within browsers—technologies like WebAssembly, WebRTC, and WebGL are truly exciting. Although my technical expertise isn't yet profound, my enthusiasm for this field has never waned and will persist indefinitely. In the meantime, I hope to connect with like-minded peers to grow together.
-            <span>我从2021年接触Web开发至今，一直没有改变职业方向和内心的热爱，这取决于繁荣的前端社区和HTTP的进一步发展，我们发现在浏览器里面可以做的事情越来越多，Web Assembly, WebRTC, WebGL, 这些技术概念真令人激动，虽然我的技术层次并不深，但是我内心对于这个领域的热情从未减弱，并且会一直持续下去，在此期间也希望可以认识志同道合的朋友，一起进步。</span>
+            Since I got into Web development in 2021, I haven't changed my career path or inner passion. This is driven
+            by the thriving front-end community and the continuous evolution of HTTP. We've witnessed an expanding range
+            of possibilities within browsers—technologies like WebAssembly, WebRTC, and WebGL are truly exciting.
+            Although my technical expertise isn't yet profound, my enthusiasm for this field has never waned and will
+            persist indefinitely. In the meantime, I hope to connect with like-minded peers to grow together.
+            <span>我从2021年接触Web开发至今，一直没有改变职业方向和内心的热爱，这取决于繁荣的前端社区和HTTP的进一步发展，我们发现在浏览器里面可以做的事情越来越多，Web Assembly, WebRTC,
+                WebGL, 这些技术概念真令人激动，虽然我的技术层次并不深，但是我内心对于这个领域的热情从未减弱，并且会一直持续下去，在此期间也希望可以认识志同道合的朋友，一起进步。</span>
         </p>
 
         <h3>Find me on</h3>
@@ -187,14 +194,22 @@
                 Vercel
             </BriefAlink>
         </p>
+        <NuxtLink to="/projects">
+            <h3>Projects</h3>
+        </NuxtLink>
         <br />
-        <span class="text-sm op50" data-immersive-translate-walked="a2a8dff1-2ed6-4514-8b07-7065b7319dc8" data-immersive-translate-paragraph="1"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: inherit;" data-immersive-translate-walked="a2a8dff1-2ed6-4514-8b07-7065b7319dc8">CC BY-NC-SA 4.0</a> 2025-PRESENT © Leon Gao</span>
+        <span class="text-sm op50" data-immersive-translate-walked="a2a8dff1-2ed6-4514-8b07-7065b7319dc8"
+            data-immersive-translate-paragraph="1"><a target="_blank"
+                href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: inherit;"
+                data-immersive-translate-walked="a2a8dff1-2ed6-4514-8b07-7065b7319dc8">CC BY-NC-SA
+                4.0</a> 2025-PRESENT © Leon Gao</span>
     </article>
 </template>
 
 <style scoped lang='scss'>
 p {
     mix-blend-mode: difference;
+
     span {
         display: block;
         color: #999999;
