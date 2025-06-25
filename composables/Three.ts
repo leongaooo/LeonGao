@@ -34,17 +34,19 @@ export function useInitialThree(
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(width, height);
     // 辅助对象
-    let AxesHelper = null;
+    let AxesHelper: any = null;
     if (options.axesHelper) {
         AxesHelper = new THREE.AxesHelper(200);
         scene.add(AxesHelper);
     }
     // 打开鼠标辅助
-    let controls = null;
+    let controls: any = null;
     if (options.controls) {
         controls = new OrbitControls(camera, renderer.domElement);
     }
     let previousTime = Date.now();
+    // 关键帧动画id
+    let animationId: any
     // 渲染函数
     function render(FrameRequestCallback?: number) {
         const currentTime = Date.now();
@@ -55,7 +57,34 @@ export function useInitialThree(
         renderer.render(scene, camera);
         postRenderCallback?.(deltaTime);
 
-        requestAnimationFrame(render);
+        animationId = requestAnimationFrame(render);
+    }
+
+    // 销毁当前组件函数
+    function dispose() {
+        // 销毁渲染器
+        renderer.dispose();
+        // 清除场景中的所有对象
+        scene.clear();
+
+        // 销毁控制器
+        if (controls) {
+            controls.dispose();
+            controls = null;
+        }
+
+        // 销毁辅助线
+        if (AxesHelper) {
+            AxesHelper.geometry.dispose();
+            AxesHelper.material.dispose();
+            scene.remove(AxesHelper);
+            AxesHelper = null;
+        }
+
+        if (animationId) {
+            // 取消动画帧请求
+            cancelAnimationFrame(animationId);
+        }
     }
 
     return {
@@ -72,6 +101,8 @@ export function useInitialThree(
         /** 渲染函数 */
         render,
         /** ThreeJs对象 */
-        THREE
+        THREE,
+        /** 销毁函数 */
+        dispose,
     };
 }

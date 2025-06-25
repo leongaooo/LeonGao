@@ -10,9 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "gsap": "^3.13.0",
     "nuxt": "^3.17.5",
     "simplex-noise": "^4.0.3",
     "three": "^0.177.0",
+    "unocss": "^66.3.1",
     "vue": "^3.5.16",
     "vue-router": "^4.5.1"
   },
