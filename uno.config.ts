@@ -1,36 +1,20 @@
-import {
-    defineConfig,
-    presetAttributify,
-    presetIcons,
-    presetTypography,
-    presetWebFonts,
-    presetWind3,
-    transformerDirectives,
-    transformerVariantGroup
-} from 'unocss'
+// uno.config.ts
+import { defineConfig } from 'unocss'
+import { presetUno, presetAttributify, presetIcons } from 'unocss'
 
 export default defineConfig({
-    shortcuts: [
-        // ...
-    ],
-    theme: {
-        colors: {
-            // ...
-        }
-    },
     presets: [
-        presetWind3(),
+        presetUno(),
         presetAttributify(),
         presetIcons(),
-        presetTypography(),
-        presetWebFonts({
-            fonts: {
-                // ...
-            },
-        }),
     ],
-    transformers: [
-        transformerDirectives(),
-        transformerVariantGroup(),
-    ],
+    shortcuts: {
+        // 自定义快捷方式
+    },
+    theme: {
+        // 主题配置
+        colors: {
+            // 自定义颜色
+        }
+    }
 })
