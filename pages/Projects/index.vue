@@ -30,10 +30,10 @@ onMounted(() => {
     <article class="max-w-[800px] w-full m-auto p-3 relative opacity-0" :style="{ opacity: hideDom ? 1 : 0 }">
         <h1 class="title">My Projects</h1>
         <div class="flex flex-wrap gap-15px">
-            <NuxtLink class="w-30% decoration-none" :to="`/projects/three/${item.path}`" v-for="item in menuList"
-                :key="item.path">
+            <NuxtLink class="w-100% sm:w-30% decoration-none" :to="`/projects/three/${item.path}`"
+                v-for="item in menuList" :key="item.path">
                 <div class="card rounded-md">
-                    <img :src="item.img" alt="" class="w-full  h-[150px] object-c rounded">
+                    <img :src="item.img" alt="" class="w-full  h-[80px] sm:h-[150px] object-c rounded">
                     <span class="text-center text-#fff m-r-1 font-500">{{ item.name }}</span>
                 </div>
             </NuxtLink>

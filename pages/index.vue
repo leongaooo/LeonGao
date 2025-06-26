@@ -217,4 +217,15 @@ p {
         mix-blend-mode: difference;
     }
 }
+
+/* 为 a 标签设置颜色，在亮色和暗色模式下都能明显显示 */
+a {
+    color: #3498db;
+    /* 基础颜色，亮色模式下明显 */
+
+    @media (prefers-color-scheme: dark) {
+        color: #5dade2;
+        /* 暗色模式下调整为稍亮的蓝色，保证可读性 */
+    }
+}
 </style>

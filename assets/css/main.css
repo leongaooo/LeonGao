@@ -47,3 +47,7 @@ p {
   letter-spacing: 1px;
   line-height: 36px;
 }
+
+article {
+  box-sizing: border-box;
+}
