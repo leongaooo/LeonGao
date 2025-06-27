@@ -1,7 +1,8 @@
 <!-- 组件说明 -->
 <script setup lang='ts'>
 import mountain from '@/assets/img/mountain.jpg'
-import key from '@/assets/img/sky.png'
+import sky from '@/assets/img/sky.png'
+import skyPlanet from '@/assets/img/skyplanet.png'
 
 // 显示隐藏内容区, 避免动画未到展示时刻，静态dom的显示
 const hideDom = ref(false)
@@ -15,8 +16,13 @@ const menuList = [
     {
         name: '天空盒UV动画',
         path: 'skyuv',
-        img: key,
-    }
+        img: sky,
+    },
+    {
+        name: '天空盒星球地形',
+        path: 'skyPlanet',
+        img: skyPlanet,
+    },
 ]
 
 onMounted(() => {
