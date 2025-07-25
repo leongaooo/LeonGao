@@ -3,34 +3,40 @@
   font-family: "MeriendaBlack";
   src: url("../font/Merienda_woff2/Merienda-Black.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "MeriendaBold";
   src: url("../font/Merienda_woff2/Merienda-Bold.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "MeriendaExtraBold";
   src: url("../font/Merienda_woff2/Merienda-ExtraBold.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "MeriendaLight";
   src: url("../font/Merienda_woff2/Merienda-Light.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "MeriendaMedium";
   src: url("../font/Merienda_woff2/Merienda-Medium.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "MeriendaRegular";
   src: url("../font/Merienda_woff2/Merienda-Regular.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "MeriendaSemiBold";
   src: url("../font/Merienda_woff2/Merienda-SemiBold.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "MeriendaVariable";
-  src: url("../font/Merienda_woff2/Merienda-VariableFont_wght.woff2")
-    format("woff2");
+  src: url("../font/Merienda_woff2/Merienda-VariableFont_wght.woff2") format("woff2");
 }
 
 body {
@@ -40,6 +46,11 @@ body {
     "MeriendaVariable", sans-serif;
   /* 强制等待字体加载 */
   /* font-display: block; */
+}
+
+#__nuxt {
+  width: 100vw;
+  height: 100vh;
 }
 
 p {
