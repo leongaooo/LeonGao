@@ -36,7 +36,8 @@
 
 @font-face {
   font-family: "MeriendaVariable";
-  src: url("../font/Merienda_woff2/Merienda-VariableFont_wght.woff2") format("woff2");
+  src: url("../font/Merienda_woff2/Merienda-VariableFont_wght.woff2")
+    format("woff2");
 }
 
 body {
@@ -51,6 +52,7 @@ body {
 #__nuxt {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 p {
@@ -61,4 +63,31 @@ p {
 
 article {
   box-sizing: border-box;
+}
+
+/* 自定义浏览器滚动条样式 */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 6px;
+  border: 3px solid #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8a8a8;
+}
+
+/* 兼容 Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 #f5f5f5;
 }
